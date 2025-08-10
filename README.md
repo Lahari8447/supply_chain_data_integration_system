@@ -77,3 +77,47 @@ Built in **Streamlit**, connected live to BigQuery.
 ```bash
 git clone https://github.com/Lahari8447/supply_chain_data_integration_system.git
 cd supply_chain_data_integration_system
+You want some example PDFs or content to add to your repo and commit, right?
+
+Since I can't generate real PDFs directly here, I can help you create simple PDF files you can add, commit, and push. Here are two easy ways:
+
+---
+
+### Option 1: Create simple PDF files locally (using Python)
+
+If you have Python installed, run this script to generate PDFs:
+
+```python
+from fpdf import FPDF
+
+pdf = FPDF()
+pdf.add_page()
+pdf.set_font("Arial", size=12)
+pdf.cell(200, 10, txt="Supply Chain Data Integration System", ln=True, align='C')
+pdf.cell(200, 10, txt="This is a sample PDF document for commit testing.", ln=True, align='L')
+pdf.output("sample1.pdf")
+
+pdf2 = FPDF()
+pdf2.add_page()
+pdf2.set_font("Arial", size=12)
+pdf2.cell(200, 10, txt="Project Documentation", ln=True, align='C')
+pdf2.cell(200, 10, txt="Another sample PDF to commit and push.", ln=True, align='L')
+pdf2.output("sample2.pdf")
+```
+
+* Install `fpdf` if needed:
+
+  ```
+  pip install fpdf
+  ```
+* Run this script in your project folder to create `sample1.pdf` and `sample2.pdf`.
+* Then add, commit, and push:
+
+```bash
+git add sample1.pdf sample2.pdf
+git commit -m "Add sample PDF documents for testing commits"
+git push
+```
+
+---
+
