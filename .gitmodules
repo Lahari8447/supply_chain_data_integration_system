@@ -1,0 +1,3 @@
+[submodule "supply_chain_data_integration_system"]
+	path = supply_chain_data_integration_system
+	url = https://github.com/Lahari8447/supply_chain_data_integration_system.git
